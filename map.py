@@ -62,7 +62,7 @@ X_validacion_nuevo, y_validacion_nuevo = X_combinado_nuevo[entrenamiento_fin_nue
 modelo_lineal_nuevo.fit(X_entrenamiento_nuevo, y_entrenamiento_nuevo, validation_data=(X_validacion_nuevo, y_validacion_nuevo), epochs=300)
 
 # Guarda el modelo entrenado en el directorio 'linear-model/1/'
-directorio_exportacion_nuevo = 'linear-model'  # Cambia el número del modelo si es necesario
+directorio_exportacion_nuevo = 'linear-model/1'  # Cambia el número del modelo si es necesario
 tf.saved_model.save(modelo_lineal_nuevo, os.path.join('./', directorio_exportacion_nuevo))
 
 # Puntos GPS para Alemania y Bolivia
