@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-SERVER_URL = 'https://map-model-service-icec-yoangelcruz.cloud.okteto.net/v1/models/map-model:predict'
+SERVER_URL = 'https://linear-model-service-model-yoloogroth.cloud.okteto.net/v1/models/map-model:predict'
 
 def make_prediction(inputs):
     predict_request = {'instances': inputs}
