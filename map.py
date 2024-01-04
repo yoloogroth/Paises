@@ -18,6 +18,7 @@ modelo_lineal_nuevo = tf.keras.models.Sequential([
 # Compila el modelo especificando el optimizador, la función de pérdida y las métricas
 modelo_lineal_nuevo.compile(optimizer=tf.keras.optimizers.SGD(), loss=tf.keras.losses.binary_crossentropy, metrics=['accuracy'])
 
+
 # Imprime un resumen del modelo, mostrando la arquitectura y el número de parámetros
 print(modelo_lineal_nuevo.summary())
 
